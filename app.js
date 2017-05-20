@@ -37,8 +37,8 @@ intentDialog.onDefault(builder.DialogAction.send('Sorry, I didn\'t understand th
 intentDialog.matches('Greeting', '/greetingDialog');
 intentDialog.matches('Size', '/sizeDialog')
 intentDialog.matches('Distance', '/distanceDialog');
-intentDialog.matches('Life', 'lifeDialog');
-intentDialog.matches('Cuk', 'cukDialog');
+intentDialog.matches('Life', '/lifeDialog');
+intentDialog.matches('Cuk', '/cukDialog');
 
 bot.dialog('/greetingDialog', 
     function(session)
