@@ -38,6 +38,7 @@ intentDialog.matches('Greeting', '/greetingDialog');
 intentDialog.matches('Size', '/sizeDialog')
 intentDialog.matches('Distance', '/distanceDialog');
 intentDialog.matches('Life', 'lifeDialog');
+intentDialog.matches('Cuk', 'cukDialog');
 
 bot.dialog('/greetingDialog', 
     function(session)
@@ -64,6 +65,13 @@ bot.dialog('/lifeDialog',
     function(session)
     {
         session.endDialog('Yes, there is life on Mars although not yet discovered by primitive humans.');
+    }
+)
+
+bot.dialog('/cukDialog', 
+    function(session)
+    {
+        session.endDialog('Opo Cuk!!!');
     }
 )
 
